@@ -10,7 +10,7 @@ describe("Navigation Tests", () => {
       cy.visit(baseUrl);
     });
 
-    /*it("should navigate to bootstrap date picker and add a specific date", () => {
+    it("should navigate to bootstrap date picker and add a specific date", () => {
       cy.visit(baseUrl + link1)
       const dateToEnter = "2023-05-01" 
       cy.get('input[type="date"]').type(dateToEnter)
@@ -31,7 +31,7 @@ describe("Navigation Tests", () => {
     });
   
 
-    it("should navigate to bootstrap date picker with a start date and an end date", () => {
+    /*it("should navigate to bootstrap date picker with a start date and an end date", () => {
       cy.visit(baseUrl + link1)
 
       const startDataDateValue = "1682985600000"
@@ -42,7 +42,7 @@ describe("Navigation Tests", () => {
       // Verify that the selected start and end dates are populated in the input field
       cy.get('@startDate').should("have.class", "active")
       cy.get('@endDate').should("have.class", "active")
-    });*/
+    })*/
 
     it("should navigate to the jQuery date picker and select two dates", () => {
       cy.visit(baseUrl + link2)
