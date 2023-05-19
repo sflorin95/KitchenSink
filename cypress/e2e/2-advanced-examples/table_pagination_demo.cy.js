@@ -8,6 +8,7 @@ describe("Navigation Tests", () => {
   context("Actions", () => {
     beforeEach(() => {
       cy.visit(baseUrl);
+      cy.setCookie('exit_popup_dismissed', 'closed');
     });
 
     it("should navigate to the table pagination example and select show all rows", () => {
